@@ -24,7 +24,7 @@ var app = new Framework7({
   },
   statusbar: {
     iosOverlaysWebView: true,
-	overlay:false
+	overlay:false,
   },
   touch: {
     // Disable fast clicks
@@ -33,6 +33,7 @@ var app = new Framework7({
   view: {
     stackPages: true,
     xhrCache: true,
+	animateWithJS:true,
   },
   dialog: {
     // set default title for all dialog shortcuts
