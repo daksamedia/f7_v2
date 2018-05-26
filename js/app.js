@@ -30,7 +30,7 @@ var app = new Framework7({
     // Disable fast clicks
     fastClicks: true,
   },
-  view: {
+  views: {
     stackPages: true,
     xhrCache: true,
 	animateWithJS:true,
@@ -52,7 +52,4 @@ var app = new Framework7({
 });
 
 
-var mainView = app.views.create(’.view-main’, {
-stackPages:true,
-animateWithJS:true
-});
+var mainView = app.views.create(’.view-main')
