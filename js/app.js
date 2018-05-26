@@ -53,7 +53,7 @@ var app = new Framework7({
 
 
 var mainView = app.views.create(’.view-main’, {
-url: ‘/products/’,
+url: ‘/product/’,
 stackPages:true,
 // looks better with js
 animateWithJS:true
