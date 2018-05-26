@@ -22,6 +22,10 @@ var app = new Framework7({
       },
     };
   },
+  statusbar: {
+    iosOverlaysWebView: true,
+	overlay:false
+  },
   dialog: {
     // set default title for all dialog shortcuts
     title: 'AkadbaiQ'
