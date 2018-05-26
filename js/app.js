@@ -26,6 +26,14 @@ var app = new Framework7({
     iosOverlaysWebView: true,
 	overlay:false
   },
+  touch: {
+    // Disable fast clicks
+    fastClicks: true,
+  },
+  view: {
+    stackPages: true,
+    xhrCache: true,
+  },
   dialog: {
     // set default title for all dialog shortcuts
     title: 'AkadbaiQ'
