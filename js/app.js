@@ -30,11 +30,6 @@ var app = new Framework7({
     // Disable fast clicks
     fastClicks: true,
   },
-  views: {
-    stackPages: true,
-    xhrCache: true,
-	animateWithJS:true,
-  },
   dialog: {
     // set default title for all dialog shortcuts
     title: 'AkadbaiQ'
@@ -44,11 +39,25 @@ var app = new Framework7({
       app.dialog.alert('Hello World!');
     },
   },
+  on: {
+    init: function () {
+      app.statusbar.show();
+	},
+	pageInit: function(){
+	  view: {
+		stackPages: true,
+		xhrCache: true,
+		animateWithJS:true,
+	  }	
+	}
+  },
+  panel: {
+    swipe: 'left',
+  },
   routes: routes,
   vi: {
     placementId: 'pltd4o7ibb9rc653x14',
   },
   
 });
-
 
