@@ -242,7 +242,7 @@ var routes = [
 				}
 			});
 		},
-		pageAfterOut:{
+		pageAfterOut:function(){
 			$$(document).trigger("click");		
 		}
 	}
