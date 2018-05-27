@@ -39,16 +39,13 @@ var app = new Framework7({
       app.dialog.alert('Hello World!');
     },
   },
+  view: {
+	stackPages: true,
+	animateWithJS:true,
+  }	
   on: {
     init: function () {
       app.statusbar.show();
-	},
-	pageInit: function(){
-	  view: {
-		stackPages: true,
-		xhrCache: true,
-		animateWithJS:true,
-	  }	
 	}
   },
   panel: {
