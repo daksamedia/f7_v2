@@ -42,7 +42,7 @@ var app = new Framework7({
   view: {
 	stackPages: true,
 	animateWithJS:true,
-  }	
+  },
   on: {
     init: function () {
       app.statusbar.show();
