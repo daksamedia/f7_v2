@@ -4,6 +4,11 @@ var routes = [
     path: '/',
     url: './index.html',
     name: 'home',
+	on:{
+		pageInit:function(){
+			app.statusbar.show();
+		}
+	}
   },
   // About page
   {
@@ -168,6 +173,7 @@ var routes = [
 			  url: 'http://api.haagendazsindonesia.co.id/v1/product',
 			  method: 'GET',
 			  dataType: 'json',
+			  cache:true,
 			  //send "query" to server. Useful in case you generate response dynamically
 			  success: function (data) {
 				app.preloader.hide();
@@ -183,8 +189,6 @@ var routes = [
 				$$(".com_language").on("click",function(){
 					id_hewan = $$(this).data("id");
 					app.router.navigate("/hewan/"+id_hewan+"/")
-					//app.dialog.alert(id_hewan);
-					//localStorage.akadbaiq.hewan = id_hewan
 				});
 				
 				
@@ -237,6 +241,9 @@ var routes = [
 					}
 				}
 			});
+		},
+		pageAfterOut:{
+			$$(document).trigger("click");		
 		}
 	}
   },
